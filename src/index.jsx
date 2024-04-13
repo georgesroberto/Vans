@@ -1,8 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
+import Navigation from "./Components/Navigation";
 import { makeServer } from "./server";
 
 if (process.env.NODE_ENV === "development") {
@@ -10,17 +8,7 @@ if (process.env.NODE_ENV === "development") {
 }
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </BrowserRouter>
-  );
+  return <Navigation />;
 }
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
