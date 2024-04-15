@@ -1,4 +1,9 @@
 # VANLIFE
 
-## Project 
-React + ReactRouter WebApp
+## Project
+
+VanLife Web App
+
+## Credits
+
+Bob Ziroll
